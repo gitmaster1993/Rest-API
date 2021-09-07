@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PST Rest API TestSuite">
+	<test thread-count="5" name="PSTRestAPITest">
+		<classes>
+
+			<class name="com.pst.api.test.automation.OPExternalSubmitAPITest" />
+			<class name="com.pst.api.test.automation.OPExternalUpdateAPITest" />
+			<class name="com.pst.api.test.automation.KPExternalSubmitAPITest" />
+			<class name="com.pst.api.test.automation.KPExternalUpdateAPITest" />
+			<!-- <class name="com.pst.api.test.automation.RMUploadSchemaAPITest" />
+			<class name="com.pst.api.test.automation.RMUpdateSchemaAPITest" />
+			<class name="com.pst.api.test.automation.GetListRMSchemaAPITest" />
+			<class name="com.pst.api.test.automation.GetRMSchemaAPITest" />
+			<class name="com.pst.api.test.automation.GetRoomMeasurementAPITest" />
+ -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

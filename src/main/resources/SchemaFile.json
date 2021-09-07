@@ -1,0 +1,447 @@
+{
+    "schema": {
+        "default": {},
+        "$schema": "http://json-schema.org/draft-07/schema",
+        "examples": [
+            {
+                "rooms": [
+                    {
+                        "walls": [
+                            {
+                                "pt1": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "wallHeight": 2500,
+                                "pt2": {
+                                    "x": 0,
+                                    "y": 5000.5
+                                }
+                            },
+                            {
+                                "pt1": {
+                                    "x": 0,
+                                    "y": 5000.5
+                                },
+                                "wallHeight": 2500,
+                                "pt2": {
+                                    "x": 4000,
+                                    "y": 5000
+                                }
+                            },
+                            {
+                                "pt1": {
+                                    "x": 4000,
+                                    "y": 5000
+                                },
+                                "wallHeight": 3000,
+                                "pt2": {
+                                    "x": 6000,
+                                    "y": 4000
+                                }
+                            },
+                            {
+                                "pt1": {
+                                    "x": 6000,
+                                    "y": 4000
+                                },
+                                "wallHeight": 2000,
+                                "pt2": {
+                                    "x": 4000,
+                                    "y": 0
+                                }
+                            },
+                            {
+                                "pt1": {
+                                    "x": 4000,
+                                    "y": 0
+                                },
+                                "wallHeight": 1800,
+                                "pt2": {
+                                    "x": 1500,
+                                    "y": 1000
+                                }
+                            },
+                            {
+                                "pt1": {
+                                    "x": 1500,
+                                    "y": 1000
+                                },
+                                "wallHeight": 1000,
+                                "pt2": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            }
+                        ],
+                        "roomName": "kitchen"
+                    }
+                ],
+                "version": "1.2"
+            }
+        ],
+        "description": "The root schema comprises the entire JSON document.",
+        "additionalProperties": true,
+        "type": "object",
+        "title": "The root schema",
+        "required": [
+            "version",
+            "rooms"
+        ],
+        "properties": {
+            "rooms": {
+                "default": [],
+                "examples": [
+                    [
+                        {
+                            "walls": [
+                                {
+                                    "pt1": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "wallHeight": 2500,
+                                    "pt2": {
+                                        "x": 0,
+                                        "y": 5000.5
+                                    }
+                                },
+                                {
+                                    "pt1": {
+                                        "x": 0,
+                                        "y": 5000.5
+                                    },
+                                    "wallHeight": 2500,
+                                    "pt2": {
+                                        "x": 4000,
+                                        "y": 5000
+                                    }
+                                },
+                                {
+                                    "pt1": {
+                                        "x": 4000,
+                                        "y": 5000
+                                    },
+                                    "wallHeight": 3000,
+                                    "pt2": {
+                                        "x": 6000,
+                                        "y": 4000
+                                    }
+                                },
+                                {
+                                    "pt1": {
+                                        "x": 6000,
+                                        "y": 4000
+                                    },
+                                    "wallHeight": 2000,
+                                    "pt2": {
+                                        "x": 4000,
+                                        "y": 0
+                                    }
+                                },
+                                {
+                                    "pt1": {
+                                        "x": 4000,
+                                        "y": 0
+                                    },
+                                    "wallHeight": 1800,
+                                    "pt2": {
+                                        "x": 1500,
+                                        "y": 1000
+                                    }
+                                },
+                                {
+                                    "pt1": {
+                                        "x": 1500,
+                                        "y": 1000
+                                    },
+                                    "wallHeight": 1000,
+                                    "pt2": {
+                                        "x": 0,
+                                        "y": 0
+                                    }
+                                }
+                            ],
+                            "roomName": "kitchen"
+                        }
+                    ]
+                ],
+                "additionalItems": true,
+                "description": "Array containing the different rooms that make out the kitchen",
+                "type": "array",
+                "title": "The rooms schema",
+                "items": {
+                    "anyOf": [
+                        {
+                            "default": {},
+                            "examples": [
+                                {
+                                    "walls": [
+                                        {
+                                            "pt1": {
+                                                "x": 0,
+                                                "y": 0
+                                            },
+                                            "wallHeight": 2500,
+                                            "pt2": {
+                                                "x": 0,
+                                                "y": 5000.5
+                                            }
+                                        },
+                                        {
+                                            "pt1": {
+                                                "x": 0,
+                                                "y": 5000.5
+                                            },
+                                            "wallHeight": 2500,
+                                            "pt2": {
+                                                "x": 4000,
+                                                "y": 5000
+                                            }
+                                        },
+                                        {
+                                            "pt1": {
+                                                "x": 4000,
+                                                "y": 5000
+                                            },
+                                            "wallHeight": 3000,
+                                            "pt2": {
+                                                "x": 6000,
+                                                "y": 4000
+                                            }
+                                        },
+                                        {
+                                            "pt1": {
+                                                "x": 6000,
+                                                "y": 4000
+                                            },
+                                            "wallHeight": 2000,
+                                            "pt2": {
+                                                "x": 4000,
+                                                "y": 0
+                                            }
+                                        },
+                                        {
+                                            "pt1": {
+                                                "x": 4000,
+                                                "y": 0
+                                            },
+                                            "wallHeight": 1800,
+                                            "pt2": {
+                                                "x": 1500,
+                                                "y": 1000
+                                            }
+                                        },
+                                        {
+                                            "pt1": {
+                                                "x": 1500,
+                                                "y": 1000
+                                            },
+                                            "wallHeight": 1000,
+                                            "pt2": {
+                                                "x": 0,
+                                                "y": 0
+                                            }
+                                        }
+                                    ],
+                                    "roomName": "kitchen"
+                                }
+                            ],
+                            "description": "Each room should consise of a name and wall object",
+                            "additionalProperties": true,
+                            "type": "object",
+                            "title": "The first anyOf schema",
+                            "required": [
+                                "roomName",
+                                "walls"
+                            ],
+                            "properties": {
+                                "walls": {
+                                    "default": [],
+                                    "examples": [
+                                        [
+                                            {
+                                                "pt1": {
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "wallHeight": 2500,
+                                                "pt2": {
+                                                    "x": 0,
+                                                    "y": 5000.5
+                                                }
+                                            },
+                                            {
+                                                "pt1": {
+                                                    "x": 0,
+                                                    "y": 5000.5
+                                                },
+                                                "wallHeight": 2500,
+                                                "pt2": {
+                                                    "x": 4000,
+                                                    "y": 5000
+                                                }
+                                            }
+                                        ]
+                                    ],
+                                    "additionalItems": true,
+                                    "description": "Array containing the walls of the room",
+                                    "type": "array",
+                                    "title": "The walls schema",
+                                    "items": {
+                                        "anyOf": [
+                                            {
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "pt1": {
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "wallHeight": 2500,
+                                                        "pt2": {
+                                                            "x": 0,
+                                                            "y": 5000.5
+                                                        }
+                                                    }
+                                                ],
+                                                "description": "A wall has a height in mm and two points describing the length of the wall",
+                                                "additionalProperties": true,
+                                                "type": "object",
+                                                "title": "The first anyOf schema",
+                                                "required": [
+                                                    "wallHeight",
+                                                    "pt1",
+                                                    "pt2"
+                                                ],
+                                                "properties": {
+                                                    "pt1": {
+                                                        "default": {},
+                                                        "examples": [
+                                                            {
+                                                                "x": 0,
+                                                                "y": 0
+                                                            }
+                                                        ],
+                                                        "description": "Describes the start position of the wall",
+                                                        "additionalProperties": true,
+                                                        "type": "object",
+                                                        "title": "The pt1 schema",
+                                                        "required": [
+                                                            "x",
+                                                            "y"
+                                                        ],
+                                                        "properties": {
+                                                            "x": {
+                                                                "default": 0,
+                                                                "examples": [
+                                                                    0
+                                                                ],
+                                                                "description": "The x position",
+                                                                "type": "integer",
+                                                                "title": "The x schema",
+                                                                "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items/anyOf/0/properties/pt1/properties/x"
+                                                            },
+                                                            "y": {
+                                                                "default": 0,
+                                                                "examples": [
+                                                                    0
+                                                                ],
+                                                                "description": "The y position",
+                                                                "type": "integer",
+                                                                "title": "The y schema",
+                                                                "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items/anyOf/0/properties/pt1/properties/y"
+                                                            }
+                                                        },
+                                                        "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items/anyOf/0/properties/pt1"
+                                                    },
+                                                    "wallHeight": {
+                                                        "default": 0,
+                                                        "examples": [
+                                                            2500
+                                                        ],
+                                                        "description": "Height of the wall in mm",
+                                                        "type": "integer",
+                                                        "title": "The wallHeight schema",
+                                                        "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items/anyOf/0/properties/wallHeight"
+                                                    },
+                                                    "pt2": {
+                                                        "default": {},
+                                                        "examples": [
+                                                            {
+                                                                "x": 0,
+                                                                "y": 5000.5
+                                                            }
+                                                        ],
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "additionalProperties": true,
+                                                        "type": "object",
+                                                        "title": "The pt2 schema",
+                                                        "required": [
+                                                            "x",
+                                                            "y"
+                                                        ],
+                                                        "properties": {
+                                                            "x": {
+                                                                "default": 0,
+                                                                "examples": [
+                                                                    0
+                                                                ],
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "type": "integer",
+                                                                "title": "The x schema",
+                                                                "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items/anyOf/0/properties/pt2/properties/x"
+                                                            },
+                                                            "y": {
+                                                                "default": 0,
+                                                                "examples": [
+                                                                    5000.5
+                                                                ],
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "type": "number",
+                                                                "title": "The y schema",
+                                                                "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items/anyOf/0/properties/pt2/properties/y"
+                                                            }
+                                                        },
+                                                        "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items/anyOf/0/properties/pt2"
+                                                    }
+                                                },
+                                                "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items/anyOf/0"
+                                            }
+                                        ],
+                                        "$id": "#/properties/rooms/items/anyOf/0/properties/walls/items"
+                                    },
+                                    "$id": "#/properties/rooms/items/anyOf/0/properties/walls"
+                                },
+                                "roomName": {
+                                    "default": "",
+                                    "examples": [
+                                        "kitchen"
+                                    ],
+                                    "description": "The name of the room",
+                                    "type": "string",
+                                    "title": "The roomName schema",
+                                    "$id": "#/properties/rooms/items/anyOf/0/properties/roomName"
+                                }
+                            },
+                            "$id": "#/properties/rooms/items/anyOf/0"
+                        }
+                    ],
+                    "$id": "#/properties/rooms/items"
+                },
+                "$id": "#/properties/rooms"
+            },
+            "version": {
+                "default": "",
+                "examples": [
+                    "1.0"
+                ],
+                "description": "Version of the schema",
+                "type": "string",
+                "title": "The version schema",
+                "$id": "#/properties/version"
+            }
+        },
+        "$id": "http://kitchen.planner.ikea.com/schema-1.json"
+    }
+}
